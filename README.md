@@ -30,7 +30,7 @@ config:
 
 example:
 ```
-cordova.plugins.SerialPortPlugin.openDevice([{dev:'/dev/ttyS0',baudrate:115200, flags:0, isHex:false}],
+cordova.plugins.SerialPortPluginClone.openDevice([{dev:'/dev/ttyS0',baudrate:115200, flags:0, isHex:false}],
     result=>alert(result),
     error=>alert(error));
 }
@@ -39,7 +39,7 @@ cordova.plugins.SerialPortPlugin.openDevice([{dev:'/dev/ttyS0',baudrate:115200, 
 #### closeDevice
 example:
 ```
-cordova.plugins.SerialPortPlugin.closeDevice(
+cordova.plugins.SerialPortPluginClone.closeDevice(
     result=>alert(result),
     error=>alert(error)
 );
@@ -49,7 +49,7 @@ cordova.plugins.SerialPortPlugin.closeDevice(
 #### read
 example:
 ```
-cordova.plugins.SerialPortPlugin.read(
+cordova.plugins.SerialPortPluginClone.read(
   res=> {
         console.log(res);
         alert(res);
@@ -62,7 +62,7 @@ cordova.plugins.SerialPortPlugin.read(
 #### write
 example:
 ```
-cordova.plugins.SerialPortPlugin.write('12345678900000000000000000000000123',
+cordova.plugins.SerialPortPluginClone.write('12345678900000000000000000000000123',
   res=> {
         console.log(res);
         alert(res);
@@ -81,7 +81,7 @@ param:
 
 example:
 ```
-cordova.plugins.SerialPortPlugin.sendDataAndWaitResponse('12345678900000000000000000000000123',1000,
+cordova.plugins.SerialPortPluginClone.sendDataAndWaitResponse('12345678900000000000000000000000123',1000,
   res=> {
         console.log(res);
         alert(res);
@@ -97,7 +97,7 @@ you can change the hexString | string  after openDevice
 
 example:
 ```
-cordova.plugins.SerialPortPlugin.setHex(true);
+cordova.plugins.SerialPortPluginClone.setHex(true);
 ```
 
 
