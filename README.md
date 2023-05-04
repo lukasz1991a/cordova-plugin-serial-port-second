@@ -1,3 +1,5 @@
+Połączenie dla wyświetlacza cen
+
 # cordova-plugin-serial-port
 ionic3 基于cordova编写的安卓串口通信插件  ionic3 serial port plugins for android
 
@@ -30,7 +32,7 @@ config:
 
 example:
 ```
-cordova.plugins.SerialPortPluginClone.openDevice([{dev:'/dev/ttyS0',baudrate:115200, flags:0, isHex:false}],
+cordova.plugins.SerialPortPluginSecond.openDevice([{dev:'/dev/ttyS0',baudrate:115200, flags:0, isHex:false}],
     result=>alert(result),
     error=>alert(error));
 }
@@ -39,7 +41,7 @@ cordova.plugins.SerialPortPluginClone.openDevice([{dev:'/dev/ttyS0',baudrate:115
 #### closeDevice
 example:
 ```
-cordova.plugins.SerialPortPluginClone.closeDevice(
+cordova.plugins.SerialPortPluginSecond.closeDevice(
     result=>alert(result),
     error=>alert(error)
 );
@@ -49,7 +51,7 @@ cordova.plugins.SerialPortPluginClone.closeDevice(
 #### read
 example:
 ```
-cordova.plugins.SerialPortPluginClone.read(
+cordova.plugins.SerialPortPluginSecond.read(
   res=> {
         console.log(res);
         alert(res);
@@ -62,7 +64,7 @@ cordova.plugins.SerialPortPluginClone.read(
 #### write
 example:
 ```
-cordova.plugins.SerialPortPluginClone.write('12345678900000000000000000000000123',
+cordova.plugins.SerialPortPluginSecond.write('12345678900000000000000000000000123',
   res=> {
         console.log(res);
         alert(res);
@@ -81,7 +83,7 @@ param:
 
 example:
 ```
-cordova.plugins.SerialPortPluginClone.sendDataAndWaitResponse('12345678900000000000000000000000123',1000,
+cordova.plugins.SerialPortPluginSecond.sendDataAndWaitResponse('12345678900000000000000000000000123',1000,
   res=> {
         console.log(res);
         alert(res);
@@ -97,7 +99,7 @@ you can change the hexString | string  after openDevice
 
 example:
 ```
-cordova.plugins.SerialPortPluginClone.setHex(true);
+cordova.plugins.SerialPortPluginSecond.setHex(true);
 ```
 
 

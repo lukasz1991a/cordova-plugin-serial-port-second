@@ -1,4 +1,4 @@
-package com.plugin.SerialPortPluginClone;
+package com.plugin.SerialPortPluginSecond;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -21,7 +21,7 @@ import java.util.concurrent.locks.*;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class SerialPortPluginClone extends CordovaPlugin {
+public class SerialPortPluginSecond extends CordovaPlugin {
     private SerialPort serialPort;
     private InputStream inputStream;
     private OutputStream outputStream;
